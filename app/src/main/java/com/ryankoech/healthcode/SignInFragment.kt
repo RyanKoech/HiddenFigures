@@ -8,12 +8,17 @@ import android.view.ViewGroup
 
 class SignInFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        var button = findViewById(
+            com.google.android.material.R.id.confirm_button as Button
         return inflater.inflate(R.layout.fragment_sign_in, container, false)
     }
+}
+
+class Button {
+
 }
