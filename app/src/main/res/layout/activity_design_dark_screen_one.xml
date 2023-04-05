@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnbackgroundimag"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_900">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearDesignDark"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_900">
+            <ImageView android:gravity="start"
+                android:id="@+id/imageBackgroundImag"
+                android:layout_height="@dimen/_266pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_backgroundimag}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_backgroundimag"/>
+            <FrameLayout android:id="@+id/frameStackrectangle"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_127pxv" android:layout_width="@dimen/_262pxh">
+                <LinearLayout android:id="@+id/linearBackdrop"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleindigo_A700">
+                    <View
+                        android:background="@drawable/rectangle_bg_indigo_a700_radius_2"
+                        android:id="@+id/lineRectangle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_5pxv"
+                        android:layout_marginBottom="@dimen/_55pxv"
+                        android:layout_marginEnd="@dimen/_106pxh"
+                        android:layout_marginStart="@dimen/_106pxh" android:layout_width="@dimen/_50pxh"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLabel"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lbl_connect_wallet"
+                    style="@style/txtKarlabold16" tools:text="@string/lbl_connect_wallet"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSigntoyourac"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_81pxh"
+                android:layout_marginStart="@dimen/_81pxh"
+                android:layout_marginTop="@dimen/_317pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/msg_sign_to_your_ac"
+                style="@style/txtKarlabold16" tools:text="@string/msg_sign_to_your_ac"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

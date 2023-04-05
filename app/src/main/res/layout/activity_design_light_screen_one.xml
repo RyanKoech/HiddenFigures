@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearDesignLight"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_900">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStack211mintwo"
+            android:layout_height="@dimen/_391pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/image211minTwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_391pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_211min2}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_211min2"/>
+            <LinearLayout android:id="@+id/linearColumnemergecare"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtEMERGECARE"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_emergecare"
+                    style="@style/txt" tools:text="@string/lbl_emergecare"/>
+                <View
+                    android:background="@drawable/rectangle_bg_gray_900_radius_2"
+                    android:id="@+id/viewRectangle"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_87pxh"
+                    android:layout_marginStart="@dimen/_87pxh"
+                    android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_50pxh"/>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:gravity="start"
+            android:id="@+id/imageRectangleOne"
+            android:layout_height="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnlabel"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_901">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLabel"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:text="@string/msg_congratulations"
+                style="@style/txtKarlabold16_1" tools:text="@string/msg_congratulations"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLabelOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@string/msg_qr_code_success"
+            style="@style/txtKarlabold16_1" tools:text="@string/msg_qr_code_success"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDownloadQrCodeOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/msg_download_qr_co"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/msg_download_qr_co"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnReturnToHomeScreen"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_44pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/msg_return_to_home"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/msg_return_to_home"/>
+    </LinearLayout>
+</layout>
